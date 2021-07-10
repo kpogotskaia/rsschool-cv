@@ -18,7 +18,6 @@
 ### HTML & CSS Example - ###https://github.com/kpogotskaia/RSschool/commit/ae8a99ee216c911c4fc6eb82d41c2### a935373a8d8 I have a pretty good idea, I can write landing pages, I have several ### examples.
 ### 
 ### Example - https://www.figma.com/file/XcXnBabeG8fz13KVb9iRKl/ZooLapki?### node-id=0%3A1 ### https://www.figma.com/file/IO5T3N3ZClTH9wA4nQSTjnlG/Untitled?node-###id=0%3A1
-### 
 **English lavel**
 ### I have a pre-intermediate level of English
 ### 
