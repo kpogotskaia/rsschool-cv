@@ -5,88 +5,253 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="stackoverflow-dark.min.css">
+    <title>Krystsina Valushka CV</title>
 </head>
-<body>
-    <header>
-        <div class="sociales">
-            <a class="gitHub">
-                <img class="soc" src="hub.png" alt="gitHub">
-            </a>
-            <a class="telegram">
-                <img class="soc" src="teleg.png" alt="telegram">
-            </a>
-            <a class="linkedIn">
-                <img class="soc" src="linked.png" alt="linkedIn">
-            </a>
-            <a class="instagram">
-                <img class="soc" src="inst.jpg" alt="instagram">
-            </a>
+<body class="cv">
+    <div class="container" id="top">
+      <header class="cv-header">
+        <a class="nav_linklogo" href="#top">
+          <img class="nav_logo" src="favicon.png" alt="logo">
+        </a>
+        <nav class="nav_menu nav_menu_desktop">
+          <ul class="nav_list">
+            <li class="nav_item"><a class="nav_link" href="#contacts">Contacts</a></li>
+            <li class="nav_item"><a class="nav_link" href="#skills">Skills</a></li>
+            <li class="nav_item"><a class="nav_link" href="#summary">Summary</a></li>
+            <li class="nav_item"><a class="nav_link" href="#experience">Experience</a></li>
+            <li class="nav_item"><a class="nav_link" href="#portfolio">Portfolio</a></li>
+            <li class="nav_item"><a class="nav_link" href="#code">Code</a></li>
+            <li class="nav_item"><a class="nav_link" href="#education">Education</a></li>
+          </ul>
+        </nav>
+        <div class="burger_menu nav_toggle" onclick="showMobMenu()">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-    </header>
-    <section>
-        <div class="about">
-            <h3>Personal information</h3>
-            <img src="pers.JPG" alt="personale-photo">
-            <span>Gunior Web-developer</span>
-            <div class="contacts">
-                <span>Name: Krystina Pogotskaia</span>
-                <span>Address: USA, Tampa, Florida</span>
-                <span>Phone: +1(541)556-1505</span>
+      </header>
+      <main class="cv-main">
+        <aside class="block-left cv-grey">
+          <div class="cv-sec cv-photoname cv-orange">
+            <figure class="cv-figure">
+              <img class="cv-photo" src="profile.JPG" alt="Vladimir Kusakin">
+              <figcaption>Photo Krystsina Valushka 2021</figcaption>
+            </figure>
+            <h1 class="cv-h1">Krystsina Valushka</h1>
+            <p class="cv-subtitle">Junior Web-Developer</p>
+          </div>
+          <section class="cv-sec cv-contacts" id="contacts">
+            <h2 class="cv-h2 cv-h2-white">Contacts</h2>
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a class="contacts-linkimg" href="https://t.me/kristinavalushka" title="kristina valushka telegram">
+                  <img src="telegram-orange.svg" alt="telegram svg orange">
+                </a>
+                <a class="contacts-link" href="https://t.me/kristinavalushka" title="kristina valushka telegram">@kristinavalushka</a>
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-linkimg" href="mailto:wal95kristina@gmail.com" title="kristina valushka mail">
+                  <img src="mail-orange.svg" alt="mail svg orange">
+                </a>
+                <a class="contacts-link" href="mailto:wal95kristina@gmail.com" title="kristina valushka mail">wal95kristina@gmail.com</a>
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-linkimg" href="https://github.com/kpogotskaia" title="kristina valushka github">
+                  <img src="github-orange.svg" alt="github svg orange">
+                </a>
+                <a class="contacts-link" href="https://github.com/kpogotskaia" title="kristina valushka github">kpogotskaia</a>
+              </li>
+              <li class="contacts-item">
+                <img src="map-orange.svg" alt="map svg orange">
+                <span>Florida, Tampa</span>
+              </li>
+            </ul>
+          </section>
+          <section class="cv-sec cv-skills" id="skills">
+            <h2 class="cv-h2 cv-h2-white">Skills</h2>
+            <ul class="cv-skills-list">
+              <li class="cv-skills-item" data-ex="90">HTML5</li>
+              <li class="cv-skills-item" data-ex="80">CSS (Bootstrap, Materialize)</li>
+              <li class="cv-skills-item" data-ex="50">JavaScript</li>
+              <li class="cv-skills-item" data-ex="20">NodeJS</li>
+              <li class="cv-skills-item" data-ex="40">SQL (MySQL, PostgreSQL)</li>
+            </ul>
+          </section>
+        </aside>
+        <div class="block-right cv-white">
+          <section class="cv-sec cv-summary" id="summary">
+            <h2 class="cv-h2"> <img src="notes-grey.svg" alt="svg notes-grey"> Summary</h2>
+            <div class="cv-text">
+              <p>I am junior Web-developer. I do not have much experience, but I have a great desire to learn and get the best experience and development. My aspiration is to become Full-Stack Developer.</p> 
+                <p> For a 8 month I have experience in developing web applications in JavaScript using the React framework.</p>              
             </div>
-            <div class="summary">
-                <h2 class="heading__about">About myself</h2>
-                <p class="pharagraph__about">My name is Krystina and I am a beginner developer. 
-                    I was born in Belarus and graduated from the university 
-                    there with a degree in public administration and law. I 
-                    have been living in America for a year and a half and for 
-                    this country the best profession is information technology, 
-                    which is why I decided to become a programmer. At the moment, 
-                    this is my main goal - to become a professional and get a job.
-                </p>
+          </section>
+          <section class="cv-sec cv-experience" id="experience">
+            <h2 class="cv-h2"> <img src="imac-grey.svg" alt="svg imac-grey"> Experience</h2>
+            <div class="cv-table">
+              <div class="cv-table-row">
+                <div class="cv-table-td">2021 — Present</div>
+                <div class="cv-table-td">
+                  <b>Web Developer</b> <br>RD CARGO INC
+                </div>
+              </div>
+              <div class="cv-table-row">
+                <div class="cv-table-td"> September 2020 — 2021</div>
+                <div class="cv-table-td"> 
+                  <b> Freelance </b>
+                </div>
+              </div>
+              <div class="cv-table-row">
+                <div class="cv-table-td">2018 — 2020</div>
+                <div class="cv-table-td">
+                  <b>SMM, Web Developer</b> <br>TechnoStore
+                </div>
+              </div>
             </div>
+          </section>
+  
+          <section class="cv-sec cv-portfolio" id="portfolio">
+            <h2 class="cv-h2"> <img src="briefcase-grey.svg" alt="svg briefcase-grey"> Portfolio</h2>
+            <div class="portfolio_list">
+              <div class="portfolio_item">
+                <a class="portfolio_link" href="https://kpogotskaia.github.io/project-online-zoo/" target="_blank" title="onlineZoo">
+                  <img class="portfolio_img" src="exampl.png" alt="onlineZoo" >
+                  <div class="portfolio_info">
+                    <p>Title: OnlineZoo</p>
+                    <p>Description: site company Zoo</p>
+                    <p>Tools: JavaScript, React, Sass, HTML, CSS</p>
+                  </div>
+                </a>
+              </div>
+              <div class="portfolio_item">
+                <a class="portfolio_link" href="https://kpogotskaia.github.io/September3/" target="_blank" title="Calenrad">
+                  <img class="portfolio_img" src="calendar.png" alt="September3" >
+                  <div class="portfolio_info">
+                    <p>Title: September</p>
+                    <p>Description: Counter, how many calendar was turned</p>
+                    <p>Tools: Javascript</p>
+                  </div>
+                </a>
+              </div>
+              <div class="portfolio_item">
+                <a class="portfolio_link" href="https://kpogotskaia.github.io/museum/" target="_blank" title="museum">
+                  <img class="portfolio_img" src="museum.png" alt="nesterov-dance" >
+                  <div class="portfolio_info">
+                    <p>Title: Museum</p>
+                    <p>Description: Louvrw, web cite museum</p>
+                    <p>Tools: HTML, Scss, React, Javascript</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+  
+          <section class="cv-sec cv-code" id="code">
+            <h2 class="cv-h2"> <img src="diskette-grey.svg" alt="svg diskette-grey"> Example of My Code</h2>
+            <div class="cv-text">
+              <p>JavaScript </p>
+              <pre class="cv-codeblock language-php">
+                <code>
+        //------------- utils -------------
+        const addClass = className => el => el.classList.add(className);
+        const removeClass = className => el => el.classList.remove(className);
+        const setText = txt => el => el.innerHTML = txt;
+                    
+        //------------- validators -------------
+        const isEmpty = v => v
+          ? ''
+          : 'Error: value shoudnt be empty';
+                    
+        const minChars = minInclusive => v => v.length >= minInclusive
+          ? ''
+          : `Error: value should be more than ${minInclusive} characters`;
+                    
+        const getErrorMessageEl = parent => parent.querySelector(ERROR_MESSAGE);
+                    
+        const showError = (parent, msg) => {
+          const $errorMessage = getErrorMessageEl(parent);
+          addClass(IS_INVALID)(parent);
+          removeClass(IS_HIDDEN)($errorMessage);
+          setText(msg)($errorMessage);
+        };
+                    
+        const hideError = (parent, msg) => {
+          const $errorMessage = getErrorMessageEl(parent);
+          removeClass(IS_INVALID)(parent);
+          addClass(IS_HIDDEN)($errorMessage);
+          setText(msg)($errorMessage);
+        };
+                    
+        //------------- handlers -------------
+        const inputFocusHandler = e => {
+          addClass(FOCUS_OR_NOT_EMPTY_CLASS)(e.target);
+        };
+                    
+        const inputBlurHandler = e => {
+          if (!e.target.value) {
+            removeClass(FOCUS_OR_NOT_EMPTY_CLASS)(e.target);
+          }
+        };
+                </code>
+              </pre>
+            </div>
+          </section>
+          <section class="cv-sec cv-education" id="education">
+            <h2 class="cv-h2"> <img src="mortarboard-grey.svg" alt="svg mortarboard-grey"> Education</h2>
+  
+            <h3 class="cv-h3">Online learning</h3>
+            <div class="cv-table">
+              <div class="cv-table-row">
+                <div class="cv-table-td">2018</div>
+                <div class="cv-table-td"><b>HTML, CSS, JavaScript</b> <br>HTML Academy</div>
+              </div>
+              <div class="cv-table-row">
+                <div class="cv-table-td">2018</div>
+                <div class="cv-table-td"><b>UI Design</b> <br>Online school “Netologia”</div>
+              </div>
+              <div class="cv-table-row">
+                <div class="cv-table-td">2019</div>
+                <div class="cv-table-td"><b>JavaScript</b> <br>Haxlet</div>
+              </div>
+              <div class="cv-table-row">
+                <div class="cv-table-td">2020-2021</div>
+                <div class="cv-table-td"><b>JavaScript, React</b> <br>RSSchool</div>
+              </div>
+            </div>
+  
+            <h3 class="cv-h3">Higher education</h3>
+            <div class="cv-table">
+              <div class="cv-table-row">
+                  <div class="cv-table-td">2013 — 2017	</div>
+                  <div class="cv-table-td">
+                    <b>Bachelor’s degree</b> <br>
+                    <b>University:</b> Academy of Public Administration under the aegis of the President of the Republic of Belarus<br>
+                    <b>Faculty:</b> Low<br>
+                  </div>
+              </div>
+            </div>
+  
+          </section>
         </div>
-        <div class="education">
-            <div class="experience">
-                <h2>My experience</h2>
-                <p>
-                    I have no experience of working in companies. 
-                    I have taken several courses such as: 
-                </p>
-                <ul>
-                    <li>HTML Academia</li>
-                    <li>Haxlet</li>
-                    <li>Netology (IU Design)</li>            
-                </ul>
-            </div>
-            <div class="skills">
-                <ul>
-                    <li>HTML5, CSS3, Saas</li>
-                    <li>JavaScript Basic</li>
-                    <li>VS Code, Intellij IDEA</li>     
-                    <li>Figma</li>   
-                    <li>Git, GitHub</li>
-                    <li>Bootstap</li>
-                </ul>
-            </div>
-            <div class="laanguage">
-                <h2>Languages</h2>
-                <ul>
-                    <li>English(B2)</li>
-                    <li>Russian</li>
-                </ul>
-            </div>
-            <div class="examples-code">
-                <h2>Code Examples</h2>
-                <a href="https://github.com/kpogotskaia/RSschool/commit/ae8a99ee216c911c4fc6eb82d41c2### a935373a8d8">HTML&CSS example</a>
-                <a href="https://www.figma.com/file/XcXnBabeG8fz13KVb9iRKl/ZooLapki?### node-id=0%3A1 ### https://www.figma.com/file/IO5T3N3ZClTH9wA4nQSTjnlG/Untitled?node-###id=0%3A1">Design in Figma</a>
-            </div>
+          
+      </main>
+      <footer class="cv-footer">
+        <div class="cv-footer-item">
+          <a href="https://github.com/kpogotskaia">GitHub kpogotskaia</a>
         </div>
-    </section>
-    <footer>
-        <a href=""></a>
-        <span>KP, 2021</span>
-        <a href="https://rollingscopes.com/"><img src="logo.svg" alt="logo"></a>
-    </footer>
-</body>
+        <div class="cv-footer-item">2021</div>
+        <div class="cv-footer-item">
+          <a href="https://rs.school/js/" title="rsschool site"><img class="cv-footer-img" src="rs_school_js.svg" alt="rsschol logo"></a>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="script.js"></script>
+
+  </body>
 </html>
